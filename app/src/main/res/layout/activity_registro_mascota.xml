@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📋 REGISTRO DE HISTORIAL CLÍNICO"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="#FFE0B2"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnCargarImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📷 Cargar foto de la mascota"
+                android:backgroundTint="#FF9800"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/tvNombreImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No se ha seleccionado ninguna imagen"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🐾 DATOS DE LA MASCOTA"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre de la mascota:"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etNombreMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: Max, Luna, Rocky"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de mascota:"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/etTipoMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: Perro, Gato, Ave, Conejo"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peso (kg):"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/etPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: 5.5"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medidas:"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/etMedidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: 50 cm alto, 40 cm largo"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DIAGNÓSTICO Y DOLENCIA"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción de la dolencia:"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etDescripcionDolencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: Tos persistente, falta de apetito"
+                android:minLines="4"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:gravity="top"
+                android:minHeight="100dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOCTOR RESPONSABLE"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione el doctor que atiende:"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerDoctores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabGuardarHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_save"
+        android:contentDescription="Guardar historial"
+        app:backgroundTint="#4CAF50" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
